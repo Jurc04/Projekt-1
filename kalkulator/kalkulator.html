@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega kalkulator</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <p class = "tekst1">Na spodnjem kalkulatorju lahko računate osnovne računske operacije</p>
+    <p class = "tekst1">Kalkulator je narejen na osnovi HTML, CSS in Javascript</p>
+    <p class = "tekst1">Gre za preprost program, ki bo omogočal izračun rezultatov celih števil</p>
+    <h1 class = "tekst2">vpiši potrebne podatke</h1>
+    <form id = "forma">
+    <p class = "tekst3">Prvo število: </p><input type = "number" id = "stevilo1">
+    <br>
+    <p class = "tekst3">Drugo število: </p><input type = "number" id = "stevilo2">
+    <br>
+    <p class = "tekst3">Izberi računsko operacijo: </p><input type = "text" id = "operacija">
+    <br>
+    <button>potrdi</button>
+    </form>
+
+    <script>
+        document.getElementById('forma').onsubmit = function(event) {
+        event.preventDefault();
+        var stevilka1 = Number(document.getElementById("stevilo1").value);
+        var stevilka2 = Number(document.getElementById("stevilo2").value);
+        var znak = document.getElementById("operacija").value;
+        var rezultat = 0;
+if(znak == "*")
+{
+    rezultat = stevilka1 * stevilka2;
+    alert("Rezultat produkta je: " + rezultat);
+}
+else if (znak == "/")
+{
+    rezultat = stevilka1 / stevilka2;
+    alert("Količnik je " + rezultat);
+}
+
+else if (znak == "+")
+{
+    rezultat = stevilka1 + stevilka2;
+    alert("Rezultat vsote je: " + rezultat);
+}
+else if (znak == "-")
+{
+    rezultat = stevilka1 - stevilka2;
+    alert("rezultat razlike je: " + rezultat);
+}
+
+else {
+    alert("NAPAKA!");
+}
+        }
+    </script>
+</body>
+</html>

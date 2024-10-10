@@ -1,0 +1,90 @@
+body {
+    background-image: url("ozadje.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+p {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: yellow;
+} 
+
+button {
+    border: solid;
+    border-radius: 10px;
+    width: 80px;
+    height: 50px;
+    background-color: green;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+}
+
+button:hover
+{
+    background-color:burlywood;
+    font-size: 25px;
+    text-align: center;
+} 
+
+
+button:active {
+    background-color:rgb(8, 14, 3);
+    color:aliceblue;
+}
+
+#forma {
+    border: solid;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+#stevilo1 
+{
+    font-size: large;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+#stevilo2
+{
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+#operacija
+{
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+.tekst1 
+{
+    font-family: cursive;
+    font-weight: 600;
+    color: rgb(45, 45, 226);
+}
+
+.tekst2
+{
+    font-family: cursive;
+    font-weight: 850;
+}
+
+.tekst3
+{
+color:chocolate;
+font-family: cursive;
+font-weight: bold;
+}
+
+
+
+
